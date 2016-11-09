@@ -26,20 +26,19 @@ where "dropDownData" is parent scope data to be passed.
 
 Here I have considered data to be an array of json, where each josn represents data for one driver with following structure :
 
-   {
-        "Driver": {
-            "Name": "Driver Name",
-            "Mobile": "XXXXXX",
-            "Image": "image-url"
-
-        },
-        "Vehicle": {
-            "Number": "Vehicle Number",
-            "Name": "Vehicle Name",
-            "Image": "image-url"
-
-        }
-    }
+>
+{
+   "Driver": {
+      "Name": "Driver Name",
+      "Mobile": "XXXXXX",
+      "Image": "image-url"
+   },
+   "Vehicle": {
+      "Number": "Vehicle Number",
+      "Name": "Vehicle Name",
+      "Image": "image-url"
+   }
+ }
 
 For having dummy data, I have created a angular service 'dataService' at path 'js/service.js'
 So you can change data there
