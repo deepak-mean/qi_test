@@ -1,0 +1,22 @@
+<div class="col-xs-12 text-left none">
+    <div class="col-xs-12 none" ng-if="data.Driver.Name && data.Driver.Name.length >0">
+        <div class="col-xs-12 none">DRIVER</div>
+        <div class="col-xs-12 none mt10">
+            <img ng-src="{{data.Driver.Image}}" class="pull-left" />
+            <div class="pull-left">
+                <div>{{data.Driver.Name}}</div>
+                <div class="mt10">{{data.Driver.Mobile}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 none mt20" ng-if="data.Vehicle.Number && data.Vehicle.Number.length >0">
+        <div class="col-xs-12 none">VEHICLE</div>
+        <div class="col-xs-12 none mt10">
+            <img ng-src="{{data.Vehicle.Image}}" class="pull-left" />
+            <div class="pull-left">
+                <div>{{data.Vehicle.Number}}</div>
+                <div class="mt10">{{data.Vehicle.Name}}</div>
+            </div>
+        </div>
+    </div>
+</div>

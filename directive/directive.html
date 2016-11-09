@@ -1,0 +1,18 @@
+<div class="col-xs-12 none" ng-controller="dropdownCtrl">
+    <div class="col-xs-11 dropdown" >
+        <button class="col-xs-12 btn btn-primary dropdown-toggle" type="button" ng-class="{'skyblue' : selectedData}"><span ng-if="!showSelected()">Select Driver To pair</span>
+            <span ng-if="showSelected()">{{selectedData.Driver.Name || '-'}}  / {{ selectedData.Vehicle.Number || '--'}}</span>
+            <span class="down"><i class="fa fa-arrow-down"></i></span>
+        </button>
+        <div class="col-xs-12 dropdown-menu">
+            <div class="col-xs-12 none">
+                <input type="text" class="col-xs-12 none grey" placeholder="Search" ng-model="searchText">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="col-xs-12 none" id="driverList">
+                <div class="col-xs-12 none" tooltips tooltip-template-url="directive/tooltip.html" tooltip-append-to-body="true" ng-repeat="data in dropDownData | filter : searchText" ng-click="setData(data)">{{data.Driver.Name || '-'}} / {{data.Vehicle.Number || '-'}}</div>
+            </div>
+        </div>
+    </div>
+    <button ng-if="showSelected()" class="btn btn-danger pull-right" ng-click="setData(false)"><i class="fa fa-remove"></i></button>
+</div>

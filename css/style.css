@@ -1,0 +1,125 @@
+body {
+    margin: 20px auto;
+}
+
+.none {
+    margin: 0;
+    padding: 0;
+}
+.mt10{
+	margin-top: 10px;
+}
+.mt20 {
+	margin-top: 20px;
+}
+div#content {
+    margin-top: 100px;
+}
+
+div.dropdown,
+div.dropdown button,
+div.dropdown button:hover,
+div.dropdown button:active,
+div.dropdown button:focus,
+div.dropdown button:active:hover,
+div.dropdown.open,
+div.dropdown.open button.dropdown-toggle,
+div.dropdown.open button.dropdown-toggle:hover,
+div.dropdown.open button.dropdown-toggle:active,
+div.dropdown.open button.dropdown-toggle:focus {
+    background-color: white;
+    border-radius: 0px;
+    color: black;
+    text-align: left;
+}
+
+div.dropdown {
+    padding: 0;
+}
+
+div.dropdown.open button {
+    border-bottom: none;
+    background-color: skyblue!important;
+}
+
+div.dropdown-menu input,
+div.dropdown-menu input:active {
+    padding: 5px 12px;
+    box-shadow: none;
+    border: none;
+}
+
+i.fa-search {
+    position: absolute;
+    right: 5px;
+    top:5px;
+}
+
+div.dropdown-menu {
+    margin: 0;
+    border-radius: 0;
+    border: 1px solid black;
+    
+}
+div#driverList{
+	max-height: 140px;
+    overflow-y: auto;
+}
+.skyblue {
+    background-color: #b4eaff!important;
+}
+
+.grey {
+    background-color: #f1feff;
+}
+
+div.dropdown.open div.dropdown-menu {
+    border-top: none;
+}
+
+tooltip {
+    width: 100%;
+    background-color: #b4eaff;
+    padding: 5px 13px;
+}
+
+tooltip:hover,tooltip tip {
+    background-color: #273e56;
+    color: white;
+}
+tip{
+	z-index: 1001!important;
+	height: auto!important;
+	margin-top: -10px!important;
+}
+tooltip top-arrow{
+	border-color: #273e56;
+}
+
+img {
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.down {
+    position: absolute;
+    right: 10px;
+}
+.remove{
+	right:20px;
+	position: absolute;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
