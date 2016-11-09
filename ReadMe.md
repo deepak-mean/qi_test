@@ -1,5 +1,7 @@
 Deepak Assignment - Custom angular Directive
 
+##Total Development Time - 3 hours 50 minutes
+
 You need to have "http-server" installed to run the code as URL so that relative paths can work.
 
 ##Install 'http-server'
